@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+message MyEvent {
+  google.protobuf.Timestamp timestamp = 1;
+  int32 value = 2;
+  bool is_prime = 3;
+  double square_root = 4;
+  int32 square = 5;
+}
